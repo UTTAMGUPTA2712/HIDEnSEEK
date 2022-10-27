@@ -94,7 +94,7 @@ function guessed(){
     document.getElementById("inputfield").value="";
     function youwin(){
         winn.play();
-        document.getElementById("scorer").innerHTML="Your accuracy is "+(count/moves*100)+"%"; 
+        document.getElementById("scorer").innerHTML="Your accuracy is "+(count/moves*100).toFixed(3)+"%"; 
         document.getElementById("youwon").style["display"] = "block"; 
         document.getElementById("youwon").style["visibility"] = "visible"; 
     }
