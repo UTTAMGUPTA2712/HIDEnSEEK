@@ -8,6 +8,8 @@ const themee=new Audio('theme.mp3');
 themee.play();
 themee.setAttribute('loop', 'loop');
 function size(n,m){  
+
+    themee.play();
     var moves=0;
     var count=0;
     var arr=new Array(n*n);
