@@ -21,20 +21,14 @@ body{
   position: absolute;
   right: 400px;
 }
-#guess{
-  display: none;
-  position: absolute;
-  right: 10vw;
-  bottom: 10vh;
-}
 #contai{
   display: none;
 border-style:double;
 border:  grey ;
-height: 88vh;
+height: 87vh;
 }
 #choicebox{
-height: 88vh;
+height: 87vh;
 }
 .col{
   display: inline-block;
@@ -49,6 +43,7 @@ height: 88vh;
   margin: 5px;
   border-radius: 25px;
   border: 2px double red;
+  text-shadow: 2px 2px 2px burlywood;
 }
 .hideit{
   display: none;
@@ -66,6 +61,51 @@ height: 88vh;
   margin:0 30%;
   border-radius: 25px;
 }
+.detail{
+  font-size: 20px;
+  color:cyan;
+  text-shadow: 1px 1px red;
+}
+#header{
+  text-align: center;
+  color: white;
+  margin: 0 40%;
+  text-shadow: 2px 2px 2px black;
+  padding:0 ;
+  font-size: 1.2em;
+}
+#hide{
+  color: tomato;
+  text-shadow:2px 2px 2px cyan;
+}
+#and{
+  font-size: 0.7em;
+}
+#seek{
+  color: cyan;
+  text-shadow: 2px 2px 2px tomato;
+}
+#guess{
+  display: none;
+  position: absolute;
+  right: 10vw;
+  bottom: 10vh;
+  background-color: beige;
+  border-radius: 25px;
+}
+#inputfield{
+  text-align: center;
+  height: 45px;
+  width: 150px;
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: tomato;
+  background-color: transparent;
+  border-radius: 25px;
+  outline: none;
+  border-style: none;
+}
 #guessbtn{
   transition: 500ms;
   height: 50px;
@@ -74,34 +114,15 @@ height: 88vh;
   background-color: aqua;
   width: 70px;
   border-radius: 5px;
+  border-style: none;
 }
 #guessbtn:hover{
   transition: 500ms;
   background:#eb00ac ;
   color: rgb(244, 192, 192);
+  box-shadow: none;
+  text-shadow: none;
   border-radius: 25px;
-}
-.detail{
-  font-size: 20px;
-  color:cyan;
-  text-shadow: 1px 1px red;
-}
-#header{
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  color: tomato;
-  margin: 0 40%;
-  text-shadow: 2px 1px cyan;
-}
-#inputfield{
-  height: 40px;
-  width: 150px;
-  font-size: 25px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bolder;
-  color: tomato;
-  background-color: beige;
-  border-radius: 5px;
 }
 #backbtn{
   border: 0;
@@ -164,28 +185,38 @@ height: 88vh;
   }
   #guess{
     position:fixed;
-    bottom: 20px;
+    bottom: 0px;
     right: 0;
     width:100vw;
+    border-radius:0px;
+    border:3px black solid;
   }
   #guessbtn{
     width: 29%;
     font-size:3vw ;
   }
+  #guessbtn:hover{
+    border-radius:0px ;
+  }
   #inputfield{
-
     height: 43px;
     width: 69%;
   }
   #back{
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
   }
   #backbtn{
     width: 15vw;
   }
   #backbtn:hover{
     width: 18vw;
+  }
+  #error{
+    bottom: 45px;
+  }
+  .para{
+    margin: 0;
   }
 }
 
@@ -194,11 +225,10 @@ height: 88vh;
     padding: 15px;
     height: 2px;
     width: 2px;
-    font-size: 10px;
+    font-size: 13px;
   }
   #guess{
     position:fixed;
-    bottom: 20px;
     right: 0;
     width:100vw;
   }
